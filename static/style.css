@@ -1,0 +1,352 @@
+body{
+margin: 0;
+padding: 0;
+}
+html , body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* The hero image */
+.hero {
+background-image: url('images/header.jpg');
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  color:rgb(11,53,80);
+  padding-left: 100px;
+  font-family: 'Oswald', serif;
+}
+.brand span{
+margin: 0 0 0 10px;
+}
+/* targe the wave logo only*/
+.logo {
+  position: relative;
+  left:0%;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+/* Edit Surf and Paddle Co Title in hero */
+.hero-text >h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Edit An ironyard academy project */
+.hero-text >h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color:rgb(11,53,80);
+  font-size: 15px;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+/* Style the about and search inside top nav */
+.topnav a {
+  color:rgb(11,53,80);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+/* Search Icon*/
+.topnav >ul >li >img {
+display: flex;
+padding: 14px 0px;
+margin-right: 100px
+}
+ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+ul >li {
+  display: flex;
+margin-left: 10px;
+}
+
+.topnav >ul {
+  list-style-type: none;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.main-content {
+  display: flex;
+}
+/* Fantastic Headline*/
+.post-body >h1 {
+  display: flex;
+  font-size: 55px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  width:615px;
+  color:rgb(11,53,80);
+  font-family: "Oswald", sans-serif;
+  margin-block-start:0;
+  margin-right: 0;
+}
+.post-body >img {
+  display: flex;
+}
+.time-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-size: 13px;
+}
+.time-date >span {
+  color: rgb(162	177	188);
+  display: flex;
+  font-family:sans-serif;
+  flex-direction: row;
+  margin-left: 10px;
+  }
+  .time-date >span:last-child {
+    text-decoration: underline;
+  }
+.time-date >span.anne {
+  color: rgb(13	107	175	);
+}
+.post-body {
+  display: flex;
+  flex-wrap:wrap;
+  width:615px;
+  margin-left: 150px;
+  margin-right: 80px;
+
+}
+blockquote {
+  color: rgb(13	107	175);
+  font-size: 20px;
+  border-left:solid rgb(211	211	211);
+  border-width:2px;
+  line-height: 60px;
+  margin: 0;
+  padding-left: 25px;
+  margin-left: 5px;
+}
+.btn-social:hover a{
+    background-color:rgb(13	107	175);
+}
+.btn-social:hover img{
+ background-color:rgb(11,53,80);
+}
+.buttons {
+  display: flex;
+}
+.btn-social {
+  display: flex;
+  margin-left: 10px;
+  align-items: stretch;
+  height:31px;
+}
+.btn-social >img {
+  height: 12px;
+  background-color: rgb(94	104	111);
+  padding: 10px 8px 8px 9px;
+}
+.btn-social >a {
+  text-align: center;
+  text-decoration: none !important;
+  color:white;
+  background-color: rgb(163	179	190);
+  background-size: cover;
+  padding-top: 6px;
+  padding-right: 5px;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.profile >ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-inline-start:0;
+  margin-top: 0;
+  margin-bottom:50px;
+}
+.profile >ol>li {
+  margin-left: 10px;
+  color: rgb(162	177	188);
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.profile li:not(:first-child):before {
+  content: "|" ;
+  margin-right: 20px;
+  color: rgb(252	252	252);
+}
+
+.profile >span {
+  margin:0;
+  height: 20px;
+  color: rgb(13	107	175	);
+  font-family: sans-serif;
+}
+.advertisement >span {
+  display: flex;
+  margin-right: 20px;
+  color: rgb(162	177	188);
+  justify-content: flex-end;
+  text-decoration: underline;
+}
+/* Sidebar Section Heading*/
+.sidecontent >h2 {
+  color: rgb(21	109	176);
+  margin-bottom:-10px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.sidecontent >p {
+    color: rgb(162	177	188);
+    font-family: "Oswald" sans-serif;
+    font-size: 14px;
+    padding-right: 50px;
+}
+/* Most popular posts */
+h3 {
+  font-size: 50px;
+  text-align: center;
+  color:rgb(42,71,98);
+  border-top:1px solid grey;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+
+}
+.popularposts {
+  display: inline-flex;
+  width: 100%;
+}
+.popularposts-item {
+  background-repeat: no-repeat;
+  font-size: 25px;
+  width:300px;
+}
+.popularposts-item >h4 {
+  margin-bottom:20px;
+  margin-left: 20px;
+  color: rgb(11,53,80);
+}
+/* .overlay {
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ),center;
+      background-size: cover;
+} */
+.overlay {
+  position: relative;
+}
+.overlay:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color:rgba(15, 84, 156, 0.7);
+}
+.overlay:hover:before {
+  display: none;
+}
+.overlay:hover {
+ color: #fff;
+
+}
+.overlay:hover h4 {
+  color: #fff
+}
+#another {
+  background-image: url(images/surfer.jpg);
+}
+
+#posttitle {
+  background-image:
+  url(images/beer.jpg);
+}
+#heres {
+  background-image:
+  url(images/person.jpg);
+}
+#ohcool {
+  background-image:
+  url(images/bottles.jpg);
+}
+.popularposts >article {
+  height: 340px;
+  width: 25%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -10px;
+}
+.bottomnav {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  background-color: rgba(11, 53, 80,1);
+  display: cover;
+  height: 100px;
+}
+.navitems a {
+  color: rgb(122,145,161);
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+.navitems {
+  margin-right: 150px;
+  padding-top: 40px;
+}
+.logoandterms {
+  color: rgb(122,145,161);
+  font-family: sans-serif;
+  margin-left: 140px;
+  padding-top: 20px;
+}
