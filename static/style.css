@@ -263,6 +263,7 @@ h3 {
   background-repeat: no-repeat;
   font-size: 25px;
   width:300px;
+  background-size: cover;
 }
 .popularposts-item >h4 {
   margin-bottom:20px;

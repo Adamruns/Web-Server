@@ -14,8 +14,9 @@
 
 
   <meta name="description" content="">
-  <meta name"viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/png" href="/static/images/favicon.png"/>
 </head>
 <body>
 <div class="hero">
@@ -24,7 +25,7 @@
               <ul>
                 <li> <img src="/static/images/search-icon.png" alt="searchicon"> </li>
                 <li> <a href="#Search">Search</a> </li>
-                <li> <a href="#Home">About</a> </li>
+                <li> <a href="/about">About</a> </li>
               </ul>
               <div class="brand">
                     <img src="/static/images/logo.png" class="logo">
@@ -49,53 +50,12 @@
   <span>on </span>
   <span> Monday Oct. 7th 9:22pm </span>
 </div>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Tellus at urna condimentum mattis p
-    ellentesque id. Nunc sed augue lacus viverra vitae congue.
-    Eu nisl nunc mi ipsum. Enim diam vulputate ut pharetra si
-    t amet. Integer enim neque volutpat ac tincidunt.
-    Laoreet non curabitur gravida arcu ac tortor dignissim. A
-    liquam etiam erat velit scelerisque in. Viverra ipsum nunc
-    aliquet bibendum. Non odio euismod lacinia at quis.
-    Sed risus ultricies tristique nulla aliquet enim tortor at.
-    Et egestas quis ipsum suspendisse ultrices gravida dictum fusce.
-    Dui vivamus arcu felis bibendum ut tristique et egestas.
-    Aliquet eget sit amet tellus cras adipiscing. Erat imperdiet sed euismod nisi.
-    Quis imperdiet massa tincidunt nunc pulvinar sapien et.
+  <p> {{paragraphs}}
   </p>
 
   <blockquote> WOAH, THAT'S RADICAL!</blockquote>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend,
-    enim a vestibulum pellentesque,
-    massa erat eleifend lectus, non hendrerit nulla massa sed elit. S
-    ed nisl massa,
-    feugiat quis mattis volutpat, tempor eu odio. Donec pretium
-    tellus et condimentum luctus. Nunc dignissim, leo sed consequat
-    maximus, orci augue consequat lectus, in h
-    endrerit quam leo non m
-    agna. Cras luctus nisi sed sapien facilisis porttitor.
-    In pellentesque hendrerit augue, sit amet aliquam dui aliquam dictum.
-    Mauris id feugiat nisl.
-    Morbi euismod odio ex, sit amet scelerisque nibh rhoncus sed.
-    Quisque scelerisque enim enim, consectetur posuere nulla comm
-    odo nec. Nunc aliquet, massa
-    in pretium bibendum, neque turpis sollicitudin tellus, eu soda
-    les nunc
-    tellus et mauris. Sed imperdiet massa et mas
-    sa vulputate, sed consectetur nisi gravida. Aliquam ex est,
-    tristique dictum ipsum non, vehicula efficitur mi. Suspendisse sed
-    sagittis libero. Aliquam vestibulum tincidunt neque, eu inter
-    dum dui finibus ut. Suspendisse venenatis convallis erat eu egestas. Nam sit amet sodales libero.
-
-    Mauris iaculis quis felis at lobortis. Vestibulum ultricies vestib
-    ulum mauris vitae dapibus. Nam egestas,
-    nunc in pellentesque posuere, risus neque posuere felis, ut dignissim nibh elit id ligula. Maecenas vitae feugiat ligula. Sed tempus eu
-    turpis in auctor. Donec id sodales eros.
-    Aliquam maximus congue aliquet. Proin in malesuada mauris, eu iaculis l
-    orem. Fusce cursus ac metus vitae blandit. Proin rutrum sollicitudin ma
-    ssa, eget placerat dui euismod id.</p>
+  <p>{{paragraphs}}</p>
 
     <span class="buttons">
       <div class="commentbutton btn-social">
@@ -142,16 +102,16 @@
   </div>
 </div>
 
-<h3>MOST POPULAR POSTS</h3>
+<h3 id="most-popular">MOST POPULAR POSTS</h3>
 
 <div class="popularposts">
   <article class="popularposts-item overlay" id="another"> <h4>ANOTHER COOL POST</h4>
   </article>
-<article class="popularposts-item overlay"id="posttitle"><h4>POST TITLE</h4>
+<article class="popularposts-item overlay" id="posttitle"><h4>POST TITLE</h4>
   </article>
-<article class="popularposts-item overlay"id="heres"><h4>HERE'S ANOTHER LONGER POST TITLE</h4>
+<article class="popularposts-item overlay" id="heres"><h4>HERE'S ANOTHER LONGER POST TITLE</h4>
   </article>
-<article class="popularposts-item overlay"id="ohcool"><h4>OH COOL A POST!</h4>
+<article class="popularposts-item overlay" id="ohcool"><h4>OH COOL A POST!</h4>
 </article>
 </div>
 
@@ -170,5 +130,5 @@
   </div>
 </div>
 
-<body>
+</body>
 </html>
