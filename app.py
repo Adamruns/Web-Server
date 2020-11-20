@@ -5,19 +5,28 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    with open('static/text.csv', newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        text = ""
+        for row in reader:
+            print(row)
+            text = text + "<p>" + row[1] + "</p>\n"
+    print(text)
     with open("index.html") as index_html:
-        return index_html.read().replace("{{paragraphs}}", str(csvfile))
+        return index_html.read().replace("{{paragraphs}}", text)
 
 
 @app.route('/about')
 def about():
-    return "About"
+    with open('static/text.csv', newline='') as csvfile:
+        reader = list(csv.reader(csvfile))
 
+    with open("about.html") as about_html:
+        template = about_html.read()
+        template = template.replace("{{paragraph_1}}", reader[1][1])
+        template = template.replace("{{paragraph_2}}", reader[2][1])
+        return template
 
-with open('static/text.csv', newline='') as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-        print(row)
 
 if __name__ == '__main__':
     port = 5000
